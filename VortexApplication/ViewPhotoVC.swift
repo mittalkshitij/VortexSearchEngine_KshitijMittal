@@ -24,6 +24,7 @@ class ViewPhotoVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    // downloading and displaying original quality image
     func downloadImage(){
         
         let url : URL = URL.init(string: (singleImage?.src?.original)!)!

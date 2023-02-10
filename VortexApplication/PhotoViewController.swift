@@ -33,6 +33,7 @@ class PhotoViewController: UIViewController ,UITableViewDelegate, UITableViewDat
         print(data)
     }
     
+    //getting image data from url
     func getImageData(urlString : String) -> UIImage{
         
         let url = URL.init(string: urlString)
@@ -47,6 +48,7 @@ class PhotoViewController: UIViewController ,UITableViewDelegate, UITableViewDat
         
     }
     
+    //play video using AVPlayer
     func playVideo(url : URL){
         
         let player = AVPlayer(url: url)
@@ -73,7 +75,7 @@ class PhotoViewController: UIViewController ,UITableViewDelegate, UITableViewDat
         }
     }
     
-    
+    // defining values and assigning data to data cell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "dataCell", for: indexPath) as? PhotoTableViewCell

@@ -24,7 +24,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
         // Do any additional setup after loading the view.
     }
 
-
+    
+    // searching for images and videos
     @IBAction func seachButton(_ sender: UIButton) {
         
         if segmentView.selectedSegmentIndex == 0 {
@@ -35,14 +36,10 @@ class ViewController: UIViewController,UITextFieldDelegate {
        
     }
     
+    // setting destination for segue based on segment controller
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-//        if (segue.identifier == "searchToResultPhoto")
-//        {
-//            let destination = segue.destination as? PhotoViewController
-//            destination?.result = self.photoData
-//        }
-        
+
         let destination = segue.destination as? PhotoViewController
         destination?.type = segmentView.selectedSegmentIndex
         
@@ -56,6 +53,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
        
     }
     
+    // calling pexels API for photos
     func searchPhotoAPI(query : String){
         
         if(query == ""){
@@ -71,7 +69,6 @@ class ViewController: UIViewController,UITextFieldDelegate {
             //url request -> url session
             
             let headers = [
-               // "Authorization": "undefined",
                 "X-RapidAPI-Key": "fb3c4b45a0msh92445aea0665df4p1e9516jsn267725277278",
                 "X-RapidAPI-Host": "PexelsdimasV1.p.rapidapi.com"
             ]
@@ -114,6 +111,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
         }
     }
     
+    //calling pexels API for video
     func searchVideoAPI(query : String) {
         
         if(query == ""){
@@ -128,7 +126,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
       
 
             let headers = [
-                // "Authorization": "undefined",
+                
                 "X-RapidAPI-Key": "fb3c4b45a0msh92445aea0665df4p1e9516jsn267725277278",
                 "X-RapidAPI-Host": "PexelsdimasV1.p.rapidapi.com"
             ]
@@ -155,7 +153,6 @@ class ViewController: UIViewController,UITextFieldDelegate {
                         
                         self.videoData = model.videos
                         
-                        // --
                         DispatchQueue.main.async {
                             self.performSegue(withIdentifier: "searchToResultPhoto", sender: nil)
                         }
