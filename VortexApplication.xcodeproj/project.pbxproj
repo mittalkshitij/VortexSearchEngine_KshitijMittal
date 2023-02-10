@@ -16,6 +16,11 @@
 		C527C5E8299358210089F7F4 /* VortexApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C527C5E7299358210089F7F4 /* VortexApplicationTests.swift */; };
 		C527C5F2299358210089F7F4 /* VortexApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C527C5F1299358210089F7F4 /* VortexApplicationUITests.swift */; };
 		C527C5F4299358210089F7F4 /* VortexApplicationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C527C5F3299358210089F7F4 /* VortexApplicationUITestsLaunchTests.swift */; };
+		C563C4B2299530A900220C47 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C563C4B1299530A900220C47 /* PhotoViewController.swift */; };
+		C563C4B429953C9D00220C47 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C563C4B329953C9D00220C47 /* PhotoTableViewCell.swift */; };
+		C563C4B929953E8000220C47 /* PhotoDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C563C4B829953E8000220C47 /* PhotoDataModel.swift */; };
+		C563C4BB2995406F00220C47 /* ViewPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C563C4BA2995406F00220C47 /* ViewPhotoVC.swift */; };
+		C563C4BD29955A9D00220C47 /* VideoDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C563C4BC29955A9D00220C47 /* VideoDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		C527C5ED299358210089F7F4 /* VortexApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VortexApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C527C5F1299358210089F7F4 /* VortexApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VortexApplicationUITests.swift; sourceTree = "<group>"; };
 		C527C5F3299358210089F7F4 /* VortexApplicationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VortexApplicationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C563C4B1299530A900220C47 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		C563C4B329953C9D00220C47 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		C563C4B829953E8000220C47 /* PhotoDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDataModel.swift; sourceTree = "<group>"; };
+		C563C4BA2995406F00220C47 /* ViewPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhotoVC.swift; sourceTree = "<group>"; };
+		C563C4BC29955A9D00220C47 /* VideoDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +116,11 @@
 				C527C5D9299358200089F7F4 /* Assets.xcassets */,
 				C527C5DB299358200089F7F4 /* LaunchScreen.storyboard */,
 				C527C5DE299358200089F7F4 /* Info.plist */,
+				C563C4B1299530A900220C47 /* PhotoViewController.swift */,
+				C563C4B329953C9D00220C47 /* PhotoTableViewCell.swift */,
+				C563C4B829953E8000220C47 /* PhotoDataModel.swift */,
+				C563C4BA2995406F00220C47 /* ViewPhotoVC.swift */,
+				C563C4BC29955A9D00220C47 /* VideoDataModel.swift */,
 			);
 			path = VortexApplication;
 			sourceTree = "<group>";
@@ -258,7 +273,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C563C4B929953E8000220C47 /* PhotoDataModel.swift in Sources */,
+				C563C4BD29955A9D00220C47 /* VideoDataModel.swift in Sources */,
+				C563C4B429953C9D00220C47 /* PhotoTableViewCell.swift in Sources */,
 				C527C5D52993581E0089F7F4 /* ViewController.swift in Sources */,
+				C563C4BB2995406F00220C47 /* ViewPhotoVC.swift in Sources */,
+				C563C4B2299530A900220C47 /* PhotoViewController.swift in Sources */,
 				C527C5D12993581E0089F7F4 /* AppDelegate.swift in Sources */,
 				C527C5D32993581E0089F7F4 /* SceneDelegate.swift in Sources */,
 			);
